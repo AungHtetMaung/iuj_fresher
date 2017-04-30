@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html> 
+<html> 
+	<head>
+  <meta charset="UTF-8">	
+	<title>Restaurant Picker</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	
+	<!--link rel="stylesheet" href="jquery.mobile-1.0.1.css" />
+	<link rel="stylesheet" href="custom.css" />
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.0.1.min.js"></script-->
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head> 
+
+<body> 
+<!--div data-role="page" id="home" data-theme="a">
+
+	<div data-role="content">
+	
+	<div id="branding">
+		<h1>Restaurant Picker </h1>
+	</div>
+	
+	<div class="choice_list"> 
+	<h1> What would you'd like to eat? </h1>
+	
+	<ul data-role="listview" data-inset="true" >
+	<li><a href="choose_town.html" data-transition="slidedown"> <img src="sushis.jpg"/> <h3> Some Sushis</h3></a></li>
+	<li><a href="choose_town.html"  data-transition="slidedown"> <img src="pizza.jpg"/> <h3> A Pizza </h3></a></li>
+	<li><a href="choose_town.html"  data-transition="slidedown"> <img src="kebap.jpg"/> <h3> A Kebap</h3></a></li>
+	<li><a href="choose_town.html"  data-transition="slidedown"> <img src="burger.jpg"/> <h3> A Burger</h3></a></li>
+	<li><a href="choose_town.html"  data-transition="slidedown"> <img src="nems.jpg"/> <h3> Some Nems </h3></a></li>
+	<li><a href="choose_town.html"  data-transition="slidedown"> <img src="tradi.jpg"/> <h3> Something more traditional</h3></a></li>	
+	</ul>	
+	
+	</div>
+	</div>
+
+</div--><!-- /page -->
+
+<div data-role="page" id="home" data-theme="a" data-add-back-btn="true">
+
+	<div data-role="header">
+		<h1>Sports & activites</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+			<h3> @@@@@@@@@</h3>
+	<ul data-role="listview" data-inset="true" >
+	
+	<li><a href="#club"  data-transition="slidedown"> <img src="activities.jpg"/> <h3> Club</h3></a></li>
+	<li><a href="#event"  data-transition="slidedown"> <img src="event.jpg"/> <h3> Event</h3></a></li>
+	
+	</ul>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>iOS2017@E-Lab</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+<div id="event" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1> R@@@@@</h1>
+	</div> 
+
+	<div data-role="content">
+	
+	<div class="choice_list"> 
+	<h1> Events</h1>
+	
+	<ul data-role="listview" data-inset="true" >
+	<li><a href="#on" data-transition="slidedown"> <img src="on.png"/> <h2> On Campus Events</h2> </a></li>
+	<li><a href="#off" data-transition="slidedown"> <img src="off.jpeg"/> <h2> Off Campus Events</h2></a></li>
+
+	</ul>	
+	</div>
+	</div>
+
+</div><!-- /page -->
+
+<div id="on" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1> On Campus</h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		<div class="ui-block-a">
+		<h3> Fall Term</h3>	
+			<ul> 
+				<li> New Student arrival and orientations (academic and campus life)</li>
+				<li> Flea Market</li>
+				<li> Welcome Party </li>
+				<li> Career Counseling and Services Workshops and one-on-one Coaching sessions</li>
+				<li> Resume Book preparation</li>
+				<li> GSO-EC Fall elections </li>
+				<li> IR/IM Council elections</li>
+				<li> Halloween Party </li>
+				<li> Around the World @ IUJ (mid November) – festival for the town introducing country games, handicrafts, 				dance, dress and music.</li>
+				<li> Sports and Club meetings throughout the term</li>
+				<li> Deans Hours</li>				
+			</ul>
+		<h3>Winner Term</h3>
+			<ul> 
+				<li> IUJ Ski Day</li>
+				<li> IUJ Snow Sculpting Festival – not held every year</li>
+				<li> International Snowball Fight in Koide </li>
+				<li> Chinese New Year</li>
+				<li> Japanese Language Program “Happyokai”</li>
+				<li> Valentines Day Party sponsored by GSO-EC </li>
+				<li> IUJ Unplugged – IUJ musicians play acoustic music.</li>
+				<li> Sports and Club meetings throughout the term </li>
+				<li> Happy Hours and Dean’s Hours</li>
+				<li> Football/Soccer tournament (4 on 4) in the gym</li>
+				<li> Billiard Tournament</li>				
+			</ul>
+			
+			<h3>Spring Term</h3>
+				<ul> 
+					<li> UJ Open Day – International Festival” – a major event for the towns people featuring foods from 						around the world, and a 3-4 stage show presented by IUJ talent</li>
+					<li> GSO-EC Spring Elections</li>
+					<li> IR/IM Spring Council Elections </li>
+					<li> IUJ Olympics – inner dorm/off campus residents fun competition</li>
+					<li> Billiards Tournament</li>
+					<li> Graduation Party </li>
+					<li> Happy Hours and Dean’s Hours</li>								
+				</ul>
+			<h3>Summer Term</h3>
+				<ul> 
+					<li> Many events around the IEP summer program</li>
+											
+				</ul>
+					
+		</div>		
+
+	</div><!-- /grid-a -->
+	</div>
+	</div>
+	
+	<div id="off" data-role="page" data-add-back-btn="true">
+	
+		<div data-role="header"> 
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+			<h1> Off Campus</h1>
+		</div> 
+	
+		<div data-role="content">
+		<div class="ui-grid-a" id="restau_infos">	
+			<div class="ui-block-a">
+			<h3> Fall Term</h3>	
+				<ul> 
+					<li> Katakai FireWorks (Sept. 9 and 10)</li>
+					<li> Yamato area Ekiden (First Sunday of October)</li>
+					<li> Sports Day – various sports tournaments in the area (Oct. 10) </li>
+					<li> Muika-machi Ekiden (dates TBA)</li>
+					<li> Muika-machi Mountain Triathlon (Third Sunday of October)</li>
+					<li> Hakkaisan Fire Walking Festival Oct. 20</li>
+					<li> Ojiya “Bull Fights” (various dates through mid November)</li>
+					<li> Rice Harvesting festival at the “Nokyo” Agricultural Cooperative in Minami Uonuma-city (dates TBA)</li>
+					<li> Visit a Sake brewery in late December – one near Koide allows visits at any time. Others require a reservation and special tour.</li>
+					<li> Fall Leaf viewing – anywhere is recommended, but highly recommended are Okutadami (1.5 hours from campus past Koide) or Saguri Dam (off 291 toward Muikamachi). If your legs are ready, take the Gondola (or not) up Mount Hakkai-san and hike the rest of the way while enjoying the foliage. There is a fee for the Gondola, and you need gloves and good shoes. If you prefer to start at the bottom start at our own Hakkai-san Shrine in Osaki (other side of Mt. Boya).</li>
+					<li> Onsens! Japanese Hotspring bathing – See Onsen Guide Book available to copy in the SPSC and now online.</li>				
+				</ul>
+			<h3>Winner Term</h3>
+				<ul> 
+					<li> Skiing – IUJ has one pass for Itsuka-machi you may borrow. Also discount skiing coupons for Urasa or Urasa Kokusai (featuring snow boarding courses) are in the SPSC.</li>
+					<li> Koide Snow Ball Fights (dates TBA)</li>
+					<li> Muika-machi Snow Festival (dates TBA) </li>
+					<li> Muika-machi Cross Country Ski day “Aruki Ski” (dates TBA)</li>
+					<li> Toka-machi Snow Festival – featuring the largest stage built of snow in the world (dates TBA).</li>
+					<li> Naked Man’s Festival “Haddaka Oshiai Matsuri” (March 3) </li>
+					<li> Go snow shoeing around campus – you can purchase inexpensive snow shoes at 634 in town.</li>
+					<li> Great time to go to Onsens with “Rotenburo” outside baths </li>
+									
+				</ul>
+			
+				<h3>Spring Term</h3>
+					<ul> 
+						<li> Enjoy Ohanami! Cherry blossom viewing – good places are: in IUJ nature park and along the tennis courts, Koide ski grounds, Osaki Dam (excellent! especially with a picnic basket)</li>
+						<li> Paddle around in the Osaki Dam pound – feed the HUGE fish (buy food there for \100), and look at the wind-sock carp hanging overhead.</li>
+						<li> Rice Planting festival at Minami Uonuma-city “Nokyo”</li>
+														
+					</ul>
+				<h3>Summer Term</h3>
+					<ul> 
+						<li> Fire Works displays all around</li>
+						<li>Yamato area street dancing</li>
+						<li> Ojiya bull fights</li>
+						<li>Watermelon, all you can eat week at the Nokyo (Agricultural Cooperative)</li>
+						<li> Hand made river boat launching in Yuzawa</li>
+						<li>Fire Fly viewing in Muikamachi at “Hotaru no sato”</li>
+											
+					</ul>
+					
+			</div>		
+
+		</div><!-- /grid-a -->
+
+		</div>
+
+</div><!-- /page -->
+
+
+
+
+<div id="club" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1> Club</h1>
+	</div> 	
+
+	<div data-role="content">
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		<h3>Akido Club</h3>
+		<p>Activity date : Monday</p>
+		<p>Activity time: 6:00 PM</p>
+		<p>Coordinator: Lue Yarayara Judith Mireille</p>
+		<p>Contact:mireille@iuj.ac.jp</p>		
+		</div>		
+		<div class="ui-block-b">
+		<img src="IUJ-Aikido-Club.jpg" alt="plan jeanette"/>
+		</div>
+		<hr/>
+
+		<div class="ui-block-a">
+		<h3>TENNIS CLUB</h3>
+		<p>Activity date: Everyday</p>
+		<p>Activity time: till 10pm</p>
+		<p>Coordinator: Saidi Nouredine</p>
+		<p>Contact: n.saidi@iuj.ac.jp</p>	
+		
+		</div>		
+		<div class="ui-block-b">
+		<img src="Tennis-club.jpg" alt="plan jeanette"/>
+		</div>
+		<hr/>
+
+		<div class="ui-block-a">
+		<h3>BASKETBALL CLUB</h3>
+		<p>Activity date: Monday and Thursday</p>
+		<p>Activity time: 19h30 to 21h00</p>
+		<p>Coordinator: NTINDEKURE Medard</p>
+		<p>Contact: mntindek@iuj.ac.jp</p>	
+		<p>Friendly club gathered by the love of basketball</p>	
+		</div>		
+		<div class="ui-block-b">
+		<img src="Basketball-club1.jpg" alt="plan jeanette"/>
+		</div>
+		<hr/>
+		
+		<div class="ui-block-a">
+		<h3>CRICKET CLUB</h3>
+		<p>Activity date: Saturday & Sunday</p>
+		<p>Activity time: Afternoon</p>
+		<p>Coordinator: Khan, Tilla</p>
+		<p>Contact: tkhan@iuj.ac.jp</p>	
+		
+		</div>		
+		<div class="ui-block-b">
+		<img src="IUJ-Cricket-Club_Mihidum.jpg" alt="plan jeanette"/>
+		</div>
+		<hr/>
+		
+		<div class="ui-block-a">
+		<h3>VOLLEYBALL CLUB</h3>
+		<p>Activity date: Tuesdays and Saturdays</p>
+		<p>Activity time: 20:00 to 22:00 and 16:30 19:30</p>
+		<p>Coordinator: Choidorj Chimgerel</p>
+		<p>Contact: chimee@iuj.ac.jp</p>	
+		<p>Practicing volleyball while having fun</p>	
+		</div>
+		<div class="ui-block-b">
+		<img src="Volleyball-club.jpg" alt="plan jeanette"/>
+		</div>
+		<hr/>
+
+
+		<div class="ui-block-a">
+		<h3>FOOTBALL/SOCCER CLUB</h3>
+		<p>Activity dates: Wednesday, Thursday & Sunday</p>
+		<p>Activity time: 18:00-20:00</p>
+		<p>Coordinator:  Boualil, Mohamed Saad and Chapman, Nicholas William</p>
+		<p>Contact: boualil@iuj.ac.jp, nchapman@iuj.ac.jp</p>	
+		
+		</div>		
+		<div class="ui-block-b">
+		<img src="soccer.jpg" alt="plan jeanette"/>
+		</div>
+		<hr/>
+
+		<div class="ui-block-a">
+		<h3>YOGA CLUB</h3>
+		<p>Activity date: Sunday</p>
+		<p>Activity time: 8:00 – 9:00 (Yoga) & 9:00 – 10:00 (Mindfulness)</p>
+		<p>Coordinator: N. S. Cooray</p>
+		<p>Contact: cooray@iuj.ac.jp</p>	
+		
+		</div>		
+		<div class="ui-block-b">
+		<img src="Yoga.jpg" alt="plan jeanette"/>
+		</div>
+		<hr/>
+
+		<div class="ui-block-a">
+		<h3>IUJ LEAN IN CLUB</h3>
+		<p>Activity date: Mondays and weekends</p>
+		<p>Activity time: Lunch time,evenings</p>
+		<p>Coordinator: Elfazazi nabila</p>
+		<p>Contact: elfazazi@iuj.ac.jp</p>	
+		
+		</div>		
+		<div class="ui-block-b">
+		<img src="Women-in-Leadership-Club-Winter-2015.jpg" alt="plan jeanette"/>
+		</div>
+		<hr/>
+
+		<div class="ui-block-a">
+		<h3>KENDO CLUB</h3>
+		<p>Activity date: Saturday</p>
+		<p>Activity time: 15:00 – 17:00</p>
+		<p>Coordinator: Mondejar, Michael</p>
+		<p>Contact: mjm2229@iuj.ac.jp</p>	
+		
+		</div>		
+		<div class="ui-block-b">
+		<img src="IUJ-Kendo-Club_Novega.jpg" alt="plan jeanette"/>
+		</div>
+		<hr/>
+
+
+		<div class="ui-block-a">
+		<h3>MUSIC CLUB</h3>
+		<p>Activity date: Thursday</p>
+		<p>Activity time: 7 pm</p>
+		<p>Coordinator: Gulshat Kutushova</p>
+		<p>Contact: kgulshat@iuj.ac.jp</p>	
+		<p>Club for people interested in music</p>
+		</div>		
+		<div class="ui-block-b">
+		<img src="MUSIC-CLUB.jpg" alt="plan jeanette"/>
+		</div>
+		<hr/>
+		
+		<div class="ui-block-a">
+		<h3>RUNNING CLUB</h3>
+		<p>Activity date: 5 days</p>
+		<p>Activity time: 1hour 30minutes per session</p>
+		<p>Coordinator: Dennis Tlaang</p>
+		<p>Contact: dennis@iuj.ac.jp</p>	
+		<p>Social running club for runners of all abilities.</p>
+		</div>		
+		<div class="ui-block-b">
+		<img src="running.jpg" alt="plan jeanette"/>
+		</div>
+		<hr/>
+
+
+
+
+	</div><!-- /grid-a -->
+
+	</div>
+
+
+</div><!-- /page -->
+
+
+</body>
+</html>

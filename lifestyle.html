@@ -1,0 +1,595 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+  <meta charset="UTF-8">	
+	<title>Restaurant Picker</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	
+	<!--link rel="stylesheet" href="jquery.mobile-1.0.1.css" />
+	<link rel="stylesheet" href="custom.css" />
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.0.1.min.js"></script-->
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head> 
+
+<body> 
+<!--div data-role="page" id="home" data-theme="a">
+
+	<div data-role="content">
+	
+	<div id="branding">
+		<h1>Life Style </h1>
+	</div>
+	
+	<div class="choice_list"> 
+	<h1> Our Life </h1>
+	
+	<ul data-role="listview" data-inset="true" >
+	<li><a href="choose_town.html" data-transition="slidedown"> <img src="sushis.jpg"/> <h3> Dorm Life</h3></a></li>
+	<li><a href="choose_town.html"  data-transition="slidedown"> <img src="pizza.jpg"/> <h3> City life </h3></a></li>
+	<li><a href="choose_town.html"  data-transition="slidedown"> <img src="kebap.jpg"/> <h3> Communities</h3></a></li>
+		
+	</ul>	
+	
+	</div>
+	</div>
+
+</div--><!-- /page -->
+
+<div data-role="page" id="home" data-theme="a" data-add-back-btn="true">
+
+	<div data-role="header">
+		<h1>Life Style </h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+			<h3> Our Life </h3>
+	<ul data-role="listview" data-inset="true" >
+	<li><a href="#dorm"  data-transition="slidedown"> <img src="dorm.jpg"/> <h3> Dorm Life</h3></a></li>
+	<li><a href="#city"  data-transition="slidedown"> <img src="city life.jpg"/> <h3> City Life </h3></a></li>
+	<li><a href="#communites"   data-transition="slidedown"> <img src="communites.jpg"/> <h3> Communities</h3></a></li>
+		
+	</ul>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>iOS2017@E-Lab</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="dorm" data-role="page" data-theme="a" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+
+		<h1> Dorm Life</h1>
+	</div> 
+
+	<div data-role="content">
+	
+	<div class="choice_list"> 
+	<h3> In which town do you want to eat? </h3>
+	
+	<ul data-role="listview" data-inset="true" data-filter="true"  >
+	<li><a href="#room"  data-transition="slidedown"><img src="room.jpg"/>Room</a> </li>
+	<li><a href="#kitchen"  data-transition="slidedown"><img src="kitchen.png"/> Kitchen </a> </li>
+	<li><a href="#lounge" data-transition="slidedown"><img src="lounge.jpg"/>  Lounge</a> </li>
+	<li><a href="#laundry" data-transition="slidedown"><img src="loudry.jpg"/> laundry</a> </li>
+	<li><a href="#garbage" data-transition="slidedown"><img src="garbage.png"/>Garbage </a> </li>	
+	<li><a href="#pcroom" data-transition="slidedown"><img src="pcroom.png"/>Dorm's PC Room </li>
+		
+	</ul>
+	</div>	
+	</div>
+</div><!-- /page -->
+
+<div id="room" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1> Restaurant Picker</h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		<div class="ui-block-a">
+		<h3> Our Room</h3>
+		<p><strong>  Restaurant <br> in the center of Urasa</strong></p>
+		<p> On the menu: </p>
+			<ul> 
+				<li> Hot Water</li>
+				<li> Bedding: Sheets and Linens Service</li>
+				<li> Bathroom Fans </li>
+				<li> Heat and Air Conditioning </li>
+				<li> Wireless internet Connection </li>
+				<li> Phone </li>
+			</ul>			
+		</div>		
+		<div class="ui-block-b">
+		<p><img src="room.jpg" alt="jeannette photo"/></p>
+		<p><a href="http://kodamaya.exblog.jp" rel="external" data-role="button"> See our website</a></p>
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		<h3> Contact us</h3>
+		<p>International University of Japan</p>
+		<p>777 Kokusai-cho, Minami Uonuma-shi, Niigata-ken,</p>	
+		<p>JAPAN 949-7277</p>
+			
+		</div>		
+		<div class="ui-block-b">
+		<img src="map.jpg" alt="plan jeanette"/>
+		</div>
+	</div><!-- /grid-a -->
+	<div id="contact_buttons">	
+		<a href="https://www.google.co.jp/maps/place/%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%83%BC%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0+%E5%B0%8F%E7%8E%89%E5%B1%8B/@37.167436,138.9206163,17z/data=!4m12!1m6!3m5!1s0x5ff5926165aea575:0x820a649b8ab5f4f5!2sUrasa+Station!8m2!3d37.167436!4d138.922805!3m4!1s0x0:0x5f7df9177d15c7dc!8m2!3d37.1676043!4d138.9240114?hl=en" data-role="button" data-icon="location"> Find us on Google Maps </a> 	
+		<a href="tel:0257772072"  data-role="button" data-icon="phone"> Call us </a>	
+	</div>	
+	</div>
+
+</div><!-- /page -->
+
+<div id="kitchen" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1> Kitchen</h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+			
+		<div class="ui-block-b">
+		<p><img src="IMG_1076.jpg" alt="jeannette photo" height="200" width="250"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">
+		<div class="ui-block-a">
+		<ul>
+	
+		<li>Kitchens/dining rooms shall be closed in the periods from 10:30AM to 11:30AM and from
+2:30PM to 3:00PM every day due to the professional routine cleaning. 
+		</li>
+		<li>Professional cleaners regularly clean inside of the refrigerators every Friday during the period
+from 10:30AM to 11:30AM. You can use the kitchen/dining room as soon as the cleaning
+operation is over during such periods.</li>
+		<li>Monthly thorough cleaning (MTC) is basically scheduled for the second Wednesday every month
+during the period from 1:00PM to 4:00PM. You are required to move all your private belongings
+including your rice cookers to your individual room from the stainless tables before 1:00PM on
+that day. If you forget, whatever is left out in the kitchens/dining rooms shall be taken to the SD1
+Dorm Staff office – you may reclaim it for a 500yen penalty. IUJ/GSO-EC will announce in
+advance when monthly thorough cleaning takes place. You can use the kitchen/dining room as
+soon as the cleaning operation is over.  </li>
+		
+		</div>
+	</div><!-- /grid-a -->
+	
+	<hr/>
+
+	</div>
+
+
+</div><!-- /page -->
+
+
+<div id="lounge" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1> Lounge</h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		
+		<div class="ui-block-b">
+		<p><img src="IMG_1074.jpg" alt="jeannette photo" height="200" width="250"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		
+		<ul>
+			<li>Lounges are for everyone's equal use. No single group may occupy the lounges while excluding
+others. Lounges are not for organized parties and cannot be reserved (Use the Snack Lounge).
+Please share space and your home with a welcoming smile. </li>
+			<li>No smoking in the lounges.</li>
+			<li>Clean up after yourself after every use, including wiping down the table tops</li>
+			<li>Do not remove IUJ property from the lounges - doing so is considered stealing from your dorm
+mates.</li>
+			<li>Lounge Quiet Policy is 11:00pm Sunday-Thursday and 12midnight Friday and Saturday</li>
+			<li>Clean the public areas such as the kitchens, lounges, study space and TATAMI Room in MSA after
+every use. </li>
+		</ul>	
+		</div>		
+		
+	</div><!-- /grid-a -->	
+	<hr/>
+	
+	</div>
+</div><!-- /page -->
+
+<div id="laundry" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1> Laundry</h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		
+		<div class="ui-block-b">
+		<p><img src="IMG_1043.jpg" alt="jeannette photo" height="200" width="250"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		
+		<ul>
+			<li>Keep the laundry rooms neat and tidy after use. Do not leave your laundry in the washing machines
+or dryers in the laundry room after the cycle finishes. This inconveniences the next user.  </li>
+			<li>) Public Items
+Do not remove public facilities and furnishings without permission from the Dorm Staff or
+Administration Offices. Doing so is seen as stealing</li>			
+		</ul>	
+		</div>		
+		
+	</div><!-- /grid-a -->	
+	<hr/>
+</div>
+</div><!-- /page -->
+
+<div id="garbage" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1> Garbage</h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		
+		<div class="ui-block-b">
+		<p><img src="IMG_1262.jpg" alt="jeannette photo" height="200" width="250"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		
+		<ul>
+			<li>There are 2 types of garbage bins in your room. One is for "Burnable Only" and the other is for
+"Unburnable (cans & glass bottles) Only." Please make use of them so that your garbage does not get
+mixed up. When taking your garbage to the large garbage cans in the Garbage Rooms (first floor of
+the dorms) please keep your items separated: </li>
+			<li> "BURNABLE" (which includes plastic soft drink bottles; "Pet Bottles"), and </li>	
+			<li>"UNBURNABLE" (within 15cm in diameter) such as cans, glass bottles, pottery and small
+batteries (such as for remote controls or radios.), </li>
+			<li>If garbage is not correctly separated, Minami Uonuma City Office will refuse to collect the garbage.
+IUJ staff must then separate it, which is the responsibility of individual students. So, we really ask
+you to separate garbage into Burnable and Unburnable correctly!!!</li>	
+		</ul>	
+		</div>		
+		
+	</div><!-- /grid-a -->	
+	<hr/>
+</div>
+</div><!-- /page -->
+
+
+<div id="pcroom" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1> PC Lounges in the student dormitories</h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		
+		<div class="ui-block-b">
+		<p><img src="dormpcroom.jpg" alt="jeannette photo" height="200" width="250"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		
+		<ul>
+			<li>There are two computer lounges on the fifth floor in the SD2/SD3. Students can use computer anytime for 24 hours a day. And in addition, printers and scanners are available to use in each room </li>
+				
+		</ul>	
+		</div>
+		<div>
+		<table class="rooms_table">
+		<caption align="left"><b>Facilities and Equipment</b></caption>
+		<tbody>
+		<tr>
+		<td>Location</td>
+		<td>SD2</td>
+		<td>SD3</td>
+		</tr>
+		<tr>
+		<td>Computers</td>
+		<td>4</td>
+		<td>4</td>
+		</tr>
+		<tr>
+		<td>Color printers</td>
+		<td>1</td>
+		<td>1</td>
+		</tr>
+		<tr>
+		<td>Scanners</td>
+		<td>1</td>
+		<td>1</td>
+		</tr>
+		<tr>
+		<td>Wireless LAN</td>
+		<td>Available</td>
+		<td>Available</td>
+		</tr>
+		<tr>
+		<td>Access port for personal laptop</td>
+		<td>None</td>
+		<td>None</td>
+		</tr>
+		</tbody>
+		</table>
+		</div>		
+		
+	</div><!-- /grid-a -->	
+	<hr/>
+</div>
+</div><!-- /page -->
+
+
+<div id="communites" data-role="page" data-add-back-btn="true">	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1> Communites</h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		
+		<div class="ui-block-b">
+		<p><img src="communites1.png" alt="jeannette photo" height="450" width="700"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->	
+	</div>
+</div><!-- /page -->
+
+
+<div id="city" data-role="page" data-theme="a" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+
+		<h1> City Life</h1>
+	</div> 
+
+	<div data-role="content">
+	
+	<div class="choice_list"> 
+	<h3> In which town do you want to eat? </h3>
+	
+	<ul data-role="listview" data-inset="true" data-filter="true"  >
+	<li><a href="#seven"  data-transition="slidedown"><img src="7-1.png"/>Seven Eleven</a> </li>
+	<li><a href="#aeon"  data-transition="slidedown"><img src="aeon.png"/> Aeon </a> </li>
+	<li><a href="#rara" data-transition="slidedown"><img src="mark.png"/>  RARA</a> </li>
+	<li><a href="#home" data-transition="slidedown"><img src="mark.png"/> Home Center</a> </li>
+	<li><a href="#super" data-transition="slidedown"><img src="mark.png"/>SuperMarket </a> </li>		
+	</ul>
+	</div>	
+	</div>
+</div><!-- /page -->
+
+
+<div id="seven" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1>Seven Eleven Urasa</h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		
+		<div class="ui-block-b">
+		<p><img src="7-11.jpg" alt="jeannette photo" height="200" width="250"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		<h3> Contact us</h3>
+		<p>949-7302 Niigata Prefecture, Minamiuonuma,</p>
+		<p>926-1</p>	
+		<p>025-777-2139</p>
+		<p> 24 Hours</p>			
+		</div>		
+		
+	</div><!-- /grid-a -->	
+	<hr/>
+
+	<h3> Seven Eleven Near IUJ</h3>
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">		
+		<div class="ui-block-b">
+		<p><img src="IMG_1266.jpg" alt="jeannette photo" height="200" width="250"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		<h3> Contact us</h3>
+		<p>949-7241 Niigata Prefecture, Minamiuonuma,</p>
+		<p>Kurotsuchi Shinden,</p>	
+		<p>025-777-2139</p>
+		<p>24 Hours</p>			
+		</div>		
+	</div><!-- /grid-a -->
+</div>
+</div>
+</div><!-- /page -->
+
+
+
+<div id="aeon" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1>Aeon</h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		
+		<div class="ui-block-b">
+		<p><img src="aeon1.jpg" alt="jeannette photo" height="200" width="250"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		<h3> Contact us</h3>
+		<p>1 Chome-5-1 Bandai, Chuo-ku, </p>
+		<p>Niigata-shi, NiigatA-Ken</p>	
+		<p>025-255-0200</p>
+		<p>Open now: 10AM-11PM</p>			
+		</div>			
+	</div><!-- /grid-a -->	
+	<hr/>	
+</div>
+</div><!-- /page -->
+
+<div id="rara" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1>RARA</h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		
+		<div class="ui-block-b">
+		<p><img src="IMG_1261.jpg" alt="jeannette photo" height="200" width="250"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		<h3> Contact us</h3>
+		<p>949-6600 </p>
+		<p>Niigataken, Minamiuonuma-shi</p>	
+		<p>Muikamachi,</p>
+		<p>025-770-0101</p>
+		<p>Open now: 9:30AM-10PM</p>			
+		</div>			
+	</div><!-- /grid-a -->	
+	<hr/>	
+</div>
+</div><!-- /page -->
+
+<div id="home" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1>Home Improve Store </h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		
+		<div class="ui-block-b">
+		<p><img src="home.jpg" alt="jeannette photo" height="200" width="250"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		<h3> Contact us</h3>
+		<p>949-7302</p>
+		<p>Niigataken, Minamiuonuma-shi</p>	
+		<p>Urasa</p>
+		<p>025-777-5101</p>
+		<p>Open now: 9:00AM-10PM</p>			
+		</div>			
+	</div><!-- /grid-a -->	
+	<hr/>	
+</div>
+</div><!-- /page -->
+
+<div id="super" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+		<h1>Super Market </h1>
+	</div> 
+	
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		
+		<div class="ui-block-b">
+		<p><img src="super.jpg" alt="jeannette photo" height="200" width="250"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		<h3> Contact us</h3>
+		<p>949-7302</p>
+		<p>Niigataken, Minamiuonuma-shi</p>	
+		<p>Urasa</p>
+		<p>025-777-5010</p>
+		<p>Open now: 10:00AM-10PM</p>			
+		</div>			
+	</div><!-- /grid-a -->	
+	<hr/>	
+</div>
+</div><!-- /page -->
+
+
+
+</body>
+</html>
