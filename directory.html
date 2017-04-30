@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>IUJ</title>
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="jquery.mobile.structure-1.0.1.css" />
+                <link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+                <link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+                <link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+                
+                <!--link rel="stylesheet" href="jquery.mobile-1.0.1.css" />
+                 <link rel="stylesheet" href="custom.css" />
+                 <script src="js/jquery-1.7.1.min.js"></script>
+                 <script src="js/jquery.mobile-1.0.1.min.js"></script-->
+                
+                <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+                <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+                <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    
+    <body>
+        <head>
+            <div data-role="page" id="home" data-theme="a" data-add-back-btn="true">
+                <div data-role="header">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+                    
+                    <h1> Directory </h1>
+                </div>
+                
+                <div data-role="content">
+                    
+                    <div class="choice_list">
+                        <h1> Program?</h1>
+                        
+                        <ul data-role="listview" data-inset="true" >
+                            <li><a href="#im_dir" data-transition="slidedown"> <img src="./img/IM.png"/> <h2>IM</h2></a></li>
+                            <li><a href="#ir_dir" data-transition="slidedown"> <img src="./img/IR.png "/> <h2> IR  </h2></a></li>
+                            <li><a href="#fac_dir" data-transition="slidedown"> <img src="./img/fac.png"/> <h2> Faculty</h2></a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div data-role="footer">
+                    <h4>NIA</h4>
+                </div><!-- /footer -->
+            </div>
+            
+            <div id="im_dir" data-role="page" data-add-back-btn="true">
+                <div data-role="header">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+                    <h1>International Management Students</h1>
+                </div>
+                <div data-role="content">
+                    
+                   <!-- <div id="student_list_i">
+                       <iframe src="http://www.iuj.ac.jp/directory/student_search.cfm?SearchType=Student&Name=IM&Format=Email&Criteria=School&Sort=FullNameE&CFID=1821417&CFTOKEN=44091246" width="100%" height="400"/>
+                    </div> -->
+                    <div id="student_list_im" data-role="content">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="ir_dir" data-role="page" data-add-back-btn="true">
+                <div data-role="header">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+                    <h1>International Relationship Students</h1>
+                </div>
+                <div data-role="content">
+                    
+                    <div id="student_list_ir" data-role="content">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div id="fac_dir" data-role="page" data-add-back-btn="true">
+                <div data-role="header">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-back ui-btn-icon-notext ui-shadow">Back</a>
+                    <h1>IUJ Faculty List</h1>
+                </div>
+                <div data-role="content">
+                    
+                    <div id="student_list_fac" data-role="content">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+           
+           <!-- Script Controller -->
+           
+           <script>
+               $( document ).ready(function() {
+                                   
+                                   var im_table = 'http://www.iuj.ac.jp/directory/student_search.cfm?SearchType=Student&Name=IM&Format=Email&Criteria=School&Sort=FullNameE&CFID=1821417&CFTOKEN=44091246 #main3 table';
+                                   var ir_table = 'http://www.iuj.ac.jp/directory/student_search.cfm?SearchType=Student&Name=IR&Format=Email&Criteria=School&Sort=FullNameE&CFID=1821417&CFTOKEN=44091246 #main3 table';
+                                   var fac_table = 'http://www.iuj.ac.jp/directory/faculty_search.cfm?SearchType=Faculty&Name=&Format=Email&Criteria=FullNameE&Sort=DepartmentCode&CFID=1821515&CFTOKEN=12143684 #main3 table';
+                                   var proxy = 'https://cors-anywhere.herokuapp.com/';
+                                   //$('#student_list_im').load(proxy+im_table);
+                                   $('#student_list_im').load(proxy+im_table);
+                                   $('#student_list_ir').load(proxy+ir_table);
+                                   $('#student_list_fac').load(proxy+fac_table);
+                                   $('.IUJTableDataTextE').prop('data-role','table');
+                                   });
+               </script>
+        </head>
+    </body>
+</html>
